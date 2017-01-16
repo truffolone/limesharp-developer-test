@@ -15,8 +15,8 @@ function addOne(array $arr) {
             $arr[$i] = 0;
         }
     }
-    //if we got here wi didn't get any 0
-    array_unshift($arr, 1);
+    //if we got here we didn't get any 0
+    array_unshift($arr, 1); //I could have avoided using array_unshift building a "backup" variable before the for cycle but this way is more readable :)
     return $arr;
 }
 
